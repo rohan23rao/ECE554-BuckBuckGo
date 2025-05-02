@@ -34,12 +34,12 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 
 > **System Block Diagram**
 <p align="center">
-  <img src="docs/block_diagram.png" alt="Block diagram" width="800"/>
+  <img src="docs/block_diagram.png" alt="Block diagram" width="700"/>
 </p>
 
 >  **Microarchitecture Diagram**
 <p align="center">
-  <img src="docs/microarchitecture_diagram.png" alt="Block diagram" width="900"/>
+  <img src="docs/microarchitecture_diagram.png" alt="Block diagram" width="700"/>
 </p>
 
 
