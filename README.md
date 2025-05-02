@@ -1,5 +1,7 @@
 # BuckBuckGo – Accelerated Soft‑Core Game Platform
-
+<p align="center">
+  <img src="docs/banner.png" alt="Block diagram" width="400"/>
+</p>
 ![BuckBuckGo](docs/banner.png)
 
 * **BuckBuckGo** is an audio‑driven, Flappy‑Bird‑style game that demonstrates how a lightweight RISC‑V CPU plus a custom Vector Processing Unit (VPU) can deliver real‑time graphics, audio, and physics on the **Terasic DE1‑SoC** FPGA board.
