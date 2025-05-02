@@ -33,7 +33,6 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 ## System Architecture
 
 > **System Block Diagram**
-[comment]: ![Block Diagram](docs/block_diagram.png)
 <p align="center">
   <img src="docs/block_diagram.png" alt="Block diagram" width="350"/>
 </p>
@@ -42,7 +41,6 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 <p align="center">
   <img src="doc/microarchitecture_diagram.png" alt="Block diagram" width="350"/>
 </p>
-[comment]: ![Microarchitecture](docs/microarchitecture_diagram.png)
 
 
 * **CPU ↔ VPU:** PCPI coprocessor interface with ready/valid handshake.
