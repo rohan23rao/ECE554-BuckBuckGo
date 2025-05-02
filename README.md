@@ -12,10 +12,10 @@
 2. [System Architecture](#system-architecture)
 3. [Hardware Platform](#hardware-platform)
 4. [Repository Layout](#repository-layout)
-7. [Demo](#demo)
-8. [Contributors](#contributors)
-9. [Future Work](#future-work)
-10. [License](#license)
+5. [Demo](#demo)
+6. [Contributors](#contributors)
+7. [Future Work](#future-work)
+8. [License](#license)
 
 ---
 
@@ -32,27 +32,8 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 
 ## System Architecture
 
-```
-+------------------------------+
-|            VGA              |
-|    640×480 @ 60 Hz Buffer   |
-+--------------+--------------+
-               |
-+--------------v--------------+
-|    PicoRV32 CPU (RV32IMC)   |
-|   +----------------------+   |
-|   | 4‑Lane VPU (RVV)     |   |
-|   +----------------------+   |
-+--------------+--------------+
-               |
-+--------------v--------------+
-|       Audio FIFO (I²S)      |
-+--------------+--------------+
-               |
-+--------------v--------------+
-|        WM8731 Codec         |
-+------------------------------+
-```
+![Block Diagram](docs/block_diagram.png)
+![Microarchitecture](docs/microarchitecture_diagram.png)
 
 * **CPU ↔ VPU:** PCPI coprocessor interface with ready/valid handshake and bundled‑instruction optimisation (up to 4 consecutive vector ops).
 * **Memory map:** BRAM for code/data, SDRAM for large sprite frames and audio buffers.
@@ -63,8 +44,8 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 | Resource       | Utilisation               |
 | -------------- | ------------------------- |
 | Logic Elements | \~48 k / 85 k             |
-| BRAM           | 366 kbits                 |
-| On‑chip DSP    | 12 / 112                  |
+| BRAM           | 79%                       |
+| On‑chip DSP    | 10 / 87                   |
 | F‑max          | 105 MHz (timed at 50 MHz) |
 
 
