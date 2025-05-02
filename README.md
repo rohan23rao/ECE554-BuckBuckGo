@@ -3,7 +3,7 @@
 ![BuckBuckGo splash](images/banner.png)
 
 > **BuckBuckGo** is an audio‑driven, Flappy‑Bird‑style game that demonstrates how a lightweight RISC‑V CPU plus a custom Vector Processing Unit (VPU) can deliver real‑time graphics, audio, and physics on the **Terasic DE1‑SoC** FPGA board.
-
+[Website](https://msadmansakib.github.io/ECE554-Team3-SpeakEasy/index.html)
 ---
 
 ## Table of Contents
@@ -58,18 +58,13 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 ├── src/               # Verilog / SystemVerilog source files
 │   ├── cpu/           # PicoRV32 + PCPI wrapper
 │   ├── vpu/           # Vector Processing Unit
-│   └── vga/           # VGA controller & sprite logic
+├── IPs/               # Custom Altera IPs for ROM, RAM, VGA, Audio Codec, Output I/O
 ├── mifs/              # MIF/HEX memory‑initialisation files (sprites, fonts)
 ├── qsys/              # Platform Designer system
 ├── project_files/     # Quartus project (*.qsf, *.qpf)
-├── images/            # Screenshots, poster, diagrams
-├── software/
-│   ├── game/          # Bare‑metal C game logic
-│   └── tests/         # VPU micro‑benchmarks
+├── images/            # Sprite Images
 └── README.md          # You are here
 ```
-
-**Scoring** and **high‑score** are displayed in the top‑left corner of the VGA screen.
 
 ## Demo
 
