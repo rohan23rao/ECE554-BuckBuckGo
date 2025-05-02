@@ -1,0 +1,72 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\University\ECE554\ECE554CPU-main\output_io.qsys --block-symbol-file --output-directory=D:\University\ECE554\ECE554CPU-main\output_io --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/output_io.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding output_fifo [altera_avalon_fifo 20.1]
+Progress: Parameterizing module output_fifo
+Progress: Adding output_jtag_master [altera_jtag_avalon_master 20.1]
+Progress: Parameterizing module output_jtag_master
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: output_io.output_fifo: Interrupt sender output_fifo.out_irq is not connected to an interrupt receiver
+Warning: output_io.output_fifo: Interrupt sender output_fifo.in_irq is not connected to an interrupt receiver
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\University\ECE554\ECE554CPU-main\output_io.qsys --synthesis=VERILOG --output-directory=D:\University\ECE554\ECE554CPU-main\output_io\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/output_io.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding output_fifo [altera_avalon_fifo 20.1]
+Progress: Parameterizing module output_fifo
+Progress: Adding output_jtag_master [altera_jtag_avalon_master 20.1]
+Progress: Parameterizing module output_jtag_master
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: output_io.output_fifo: Interrupt sender output_fifo.out_irq is not connected to an interrupt receiver
+Warning: output_io.output_fifo: Interrupt sender output_fifo.in_irq is not connected to an interrupt receiver
+Info: output_io: Generating output_io "output_io" for QUARTUS_SYNTH
+Info: output_fifo: Starting RTL generation for module 'output_io_output_fifo'
+Info: output_fifo:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=output_io_output_fifo --dir=C:/Users/sadma/AppData/Local/Temp/alt0198_8352311650850864456.dir/0024_output_fifo_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/sadma/AppData/Local/Temp/alt0198_8352311650850864456.dir/0024_output_fifo_gen//output_io_output_fifo_component_configuration.pl  --do_build_sim=0  ]
+Info: output_fifo: Done RTL generation for module 'output_io_output_fifo'
+Info: output_fifo: "output_io" instantiated altera_avalon_fifo "output_fifo"
+Info: output_jtag_master: "output_io" instantiated altera_jtag_avalon_master "output_jtag_master"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "output_io" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "output_io" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "output_jtag_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "output_jtag_master" instantiated timing_adapter "timing_adt"
+Info: fifo: "output_jtag_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "output_jtag_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "output_jtag_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "output_jtag_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "output_jtag_master" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "output_jtag_master" instantiated channel_adapter "p2b_adapter"
+Info: output_jtag_master_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "output_jtag_master_master_translator"
+Info: output_fifo_out_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "output_fifo_out_translator"
+Info: output_jtag_master_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "output_jtag_master_master_agent"
+Info: output_fifo_out_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "output_fifo_out_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: output_jtag_master_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "output_jtag_master_master_limiter"
+Info: Reusing file D:/University/ECE554/ECE554CPU-main/output_io/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/University/ECE554/ECE554CPU-main/output_io/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/University/ECE554/ECE554CPU-main/output_io/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: output_io: Done "output_io" with 26 modules, 42 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

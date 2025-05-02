@@ -1,0 +1,78 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\DRIVE D\ECE554\ECE554CPU-main\audio_system.qsys" --block-symbol-file --output-directory="C:\DRIVE D\ECE554\ECE554CPU-main\Audio_ips" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/audio_system.qsys
+Progress: Reading input file
+Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module audio_0
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Adding audio_fifo [altera_avalon_dc_fifo 20.1]
+Progress: Parameterizing module audio_fifo
+Progress: Adding audio_final_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_final_fifo
+Progress: Adding audio_playback_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_playback_fifo
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Adding audio_sc_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_sc_fifo
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: audio_system.audio_0.avalon_left_channel_sink: audio_0.avalon_left_channel_sink must be connected to an Avalon-ST source
+Warning: audio_system.audio_final_fifo: audio_final_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.audio_sc_fifo: audio_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.: You have exported the interface audio_and_video_config_0.avalon_av_config_slave but not its associated reset interface.  Export the driver(s) of audio_and_video_config_0.reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_empty but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_full but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.out but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\DRIVE D\ECE554\ECE554CPU-main\audio_system.qsys" --synthesis=VERILOG --output-directory="C:\DRIVE D\ECE554\ECE554CPU-main\Audio_ips\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/audio_system.qsys
+Progress: Reading input file
+Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module audio_0
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Adding audio_fifo [altera_avalon_dc_fifo 20.1]
+Progress: Parameterizing module audio_fifo
+Progress: Adding audio_final_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_final_fifo
+Progress: Adding audio_playback_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_playback_fifo
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Adding audio_sc_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_sc_fifo
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: audio_system.audio_0.avalon_left_channel_sink: audio_0.avalon_left_channel_sink must be connected to an Avalon-ST source
+Warning: audio_system.audio_final_fifo: audio_final_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.audio_sc_fifo: audio_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.: You have exported the interface audio_and_video_config_0.avalon_av_config_slave but not its associated reset interface.  Export the driver(s) of audio_and_video_config_0.reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_empty but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_full but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.out but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Info: audio_system: Generating audio_system "audio_system" for QUARTUS_SYNTH
+Info: audio_0: Starting Generation of Audio Controller
+Info: audio_0: "audio_system" instantiated altera_up_avalon_audio "audio_0"
+Info: audio_and_video_config_0: Starting Generation of Audio and Video Config
+Info: audio_and_video_config_0: "audio_system" instantiated altera_up_avalon_audio_and_video_config "audio_and_video_config_0"
+Info: audio_final_fifo: "audio_system" instantiated altera_avalon_sc_fifo "audio_final_fifo"
+Info: audio_pll_0: "audio_system" instantiated altera_up_avalon_audio_pll "audio_pll_0"
+Info: rst_controller: "audio_system" instantiated altera_reset_controller "rst_controller"
+Info: audio_pll: "audio_pll_0" instantiated altera_pll "audio_pll"
+Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: audio_system: Done "audio_system" with 8 modules, 30 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

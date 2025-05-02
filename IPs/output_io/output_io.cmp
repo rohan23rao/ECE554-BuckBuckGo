@@ -1,0 +1,15 @@
+	component output_io is
+		port (
+			clk_clk                      : in  std_logic                     := 'X';             -- clk
+			output_fifo_in_writedata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			output_fifo_in_write         : in  std_logic                     := 'X';             -- write
+			output_fifo_in_waitrequest   : out std_logic;                                        -- waitrequest
+			output_fifo_in_csr_address   : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
+			output_fifo_in_csr_read      : in  std_logic                     := 'X';             -- read
+			output_fifo_in_csr_writedata : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			output_fifo_in_csr_write     : in  std_logic                     := 'X';             -- write
+			output_fifo_in_csr_readdata  : out std_logic_vector(31 downto 0);                    -- readdata
+			reset_reset_n                : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component output_io;
+

@@ -1,0 +1,9 @@
+	component VGA is
+		port (
+			clk_clk                        : in  std_logic := 'X'; -- clk
+			reset_reset_n                  : in  std_logic := 'X'; -- reset_n
+			video_pll_0_reset_source_reset : out std_logic;        -- reset
+			video_pll_0_vga_clk_clk        : out std_logic         -- clk
+		);
+	end component VGA;
+

@@ -1,0 +1,15 @@
+	component data_mem_2 is
+		port (
+			palette_clk1_clk         : in  std_logic                     := 'X';             -- clk
+			palette_reset1_reset     : in  std_logic                     := 'X';             -- reset
+			palette_reset1_reset_req : in  std_logic                     := 'X';             -- reset_req
+			palette_s1_address       : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- address
+			palette_s1_clken         : in  std_logic                     := 'X';             -- clken
+			palette_s1_chipselect    : in  std_logic                     := 'X';             -- chipselect
+			palette_s1_write         : in  std_logic                     := 'X';             -- write
+			palette_s1_readdata      : out std_logic_vector(31 downto 0);                    -- readdata
+			palette_s1_writedata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			palette_s1_byteenable    : in  std_logic_vector(3 downto 0)  := (others => 'X')  -- byteenable
+		);
+	end component data_mem_2;
+

@@ -1,0 +1,98 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\DRIVE D\ECE554\ECE554CPU-main\audio_system.qsys" --block-symbol-file --output-directory="C:\DRIVE D\ECE554\ECE554CPU-main\Audio_ips" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/audio_system.qsys
+Progress: Reading input file
+Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module audio_0
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Adding audio_fifo [altera_avalon_dc_fifo 20.1]
+Progress: Parameterizing module audio_fifo
+Progress: Adding audio_final_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_final_fifo
+Progress: Adding audio_playback_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_playback_fifo
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Adding audio_sc_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_sc_fifo
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding video_pll_0 [altera_up_avalon_video_pll 18.0]
+Progress: Parameterizing module video_pll_0
+Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 18.0]
+Progress: Parameterizing module video_vga_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: audio_system.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Warning: audio_system.audio_playback_fifo.almost_full: audio_playback_fifo.almost_full must be connected to an Avalon-ST sink
+Warning: audio_system.audio_playback_fifo.almost_empty: audio_playback_fifo.almost_empty must be connected to an Avalon-ST sink
+Warning: audio_system.audio_final_fifo: audio_final_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.audio_playback_fifo: audio_playback_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.audio_sc_fifo: audio_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.: You have exported the interface audio_and_video_config_0.avalon_av_config_slave but not its associated reset interface.  Export the driver(s) of audio_and_video_config_0.reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_empty but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_full but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.out but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface video_vga_controller_0.avalon_vga_sink but not its associated clock interface.  Export the driver of video_vga_controller_0.clk
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\DRIVE D\ECE554\ECE554CPU-main\audio_system.qsys" --synthesis=VERILOG --output-directory="C:\DRIVE D\ECE554\ECE554CPU-main\Audio_ips\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/audio_system.qsys
+Progress: Reading input file
+Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module audio_0
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Adding audio_fifo [altera_avalon_dc_fifo 20.1]
+Progress: Parameterizing module audio_fifo
+Progress: Adding audio_final_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_final_fifo
+Progress: Adding audio_playback_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_playback_fifo
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Adding audio_sc_fifo [altera_avalon_sc_fifo 20.1]
+Progress: Parameterizing module audio_sc_fifo
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding video_pll_0 [altera_up_avalon_video_pll 18.0]
+Progress: Parameterizing module video_pll_0
+Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 18.0]
+Progress: Parameterizing module video_vga_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: audio_system.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Warning: audio_system.audio_playback_fifo.almost_full: audio_playback_fifo.almost_full must be connected to an Avalon-ST sink
+Warning: audio_system.audio_playback_fifo.almost_empty: audio_playback_fifo.almost_empty must be connected to an Avalon-ST sink
+Warning: audio_system.audio_final_fifo: audio_final_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.audio_playback_fifo: audio_playback_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.audio_sc_fifo: audio_sc_fifo.csr must be connected to an Avalon-MM master
+Warning: audio_system.: You have exported the interface audio_and_video_config_0.avalon_av_config_slave but not its associated reset interface.  Export the driver(s) of audio_and_video_config_0.reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_empty but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.almost_full but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface audio_sc_fifo.out but not its associated reset interface.  Export audio_sc_fifo.clk_reset
+Warning: audio_system.: You have exported the interface video_vga_controller_0.avalon_vga_sink but not its associated clock interface.  Export the driver of video_vga_controller_0.clk
+Info: audio_system: Generating audio_system "audio_system" for QUARTUS_SYNTH
+Info: audio_0: Starting Generation of Audio Controller
+Info: audio_0: "audio_system" instantiated altera_up_avalon_audio "audio_0"
+Info: audio_and_video_config_0: Starting Generation of Audio and Video Config
+Info: audio_and_video_config_0: "audio_system" instantiated altera_up_avalon_audio_and_video_config "audio_and_video_config_0"
+Info: audio_final_fifo: "audio_system" instantiated altera_avalon_sc_fifo "audio_final_fifo"
+Info: audio_pll_0: "audio_system" instantiated altera_up_avalon_audio_pll "audio_pll_0"
+Info: video_pll_0: "audio_system" instantiated altera_up_avalon_video_pll "video_pll_0"
+Info: video_vga_controller_0: Starting Generation of VGA Controller
+Info: video_vga_controller_0: "audio_system" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info: rst_controller: "audio_system" instantiated altera_reset_controller "rst_controller"
+Info: audio_pll: "audio_pll_0" instantiated altera_pll "audio_pll"
+Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: video_pll: "video_pll_0" instantiated altera_pll "video_pll"
+Info: audio_system: Done "audio_system" with 11 modules, 35 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

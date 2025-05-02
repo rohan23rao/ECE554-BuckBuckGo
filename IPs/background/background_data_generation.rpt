@@ -1,0 +1,35 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\rohan\development\capstone\ECE554CPU\background_data.qsys --block-symbol-file --output-directory=C:\Users\rohan\development\capstone\ECE554CPU\background --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU/background_data.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\rohan\development\capstone\ECE554CPU\background_data.qsys --synthesis=VERILOG --output-directory=C:\Users\rohan\development\capstone\ECE554CPU\background\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU/background_data.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: background_data: Generating "background_data" for QUARTUS_SYNTH
+Info: onchip_memory2_0: Starting RTL generation for module 'background_data_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/24.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/24.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/24.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/24.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=background_data_onchip_memory2_0 --dir=C:/Users/rohan/AppData/Local/Temp/alt0205_1578447490159378311.dir/0002_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/24.1std/quartus --verilog --config=C:/Users/rohan/AppData/Local/Temp/alt0205_1578447490159378311.dir/0002_onchip_memory2_0_gen//background_data_onchip_memory2_0_component_configuration.pl --do_build_sim=0}]
+Info: onchip_memory2_0: Done RTL generation for module 'background_data_onchip_memory2_0'
+Info: onchip_memory2_0: "background_data" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: background_data: Done "background_data" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

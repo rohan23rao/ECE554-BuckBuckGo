@@ -1,0 +1,199 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="2415f0e4542a213907fe"/>
+  </project>
+  <file_info>
+    <file device="5CSEMA5F31C6" path="DE1_SOC.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <hub_info hub_ir_width="4" ir_width="3" node_addr_width="1" node_count="1"/>
+  <node_info>
+    <node hpath="picosoc_min:soc|output_io:out_fifo|output_io_output_jtag_master:output_jtag_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_sld_node:node|sld_virtual_jtag_basic:sld_virtual_jtag_component|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="110" node_id="132" sld_node_info="0xC206E00" version="1">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="110"/>
+        <parameter name="sld_type_id" type="dec" value="132"/>
+        <parameter name="sld_version" type="dec" value="1"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="3"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="203451904"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="picosoc_min:soc|output_io:out_fifo|output_io_output_jtag_master:output_jtag_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_sld_node:node|sld_virtual_jtag_basic:sld_virtual_jtag_component|tdo"/>
+        <port name="usr_ir_out[0]" source="picosoc_min:soc|output_io:out_fifo|output_io_output_jtag_master:output_jtag_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_sld_node:node|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="picosoc_min:soc|output_io:out_fifo|output_io_output_jtag_master:output_jtag_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_sld_node:node|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[1]"/>
+        <port name="usr_ir_out[2]" source="picosoc_min:soc|output_io:out_fifo|output_io_output_jtag_master:output_jtag_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_sld_node:node|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[2]"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_2_" source="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_in_2_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_ir_in[2]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+        <port name="jtag.bp.soc_out_fifo_output_jtag_master_jtag_phy_embedded_in_jtag_master_node_sld_virtual_jtag_component_sld_virtual_jtag_impl_inst_ir_out_2_"/>
+      </outputs>
+    </node>
+  </node_info>
+  <sld_infos>
+    <sld_info hpath="picosoc_min:soc|memory_wrapper:full_memory|RAM:ram_inst0" name="ram_inst0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME RAM HAS_SOPCINFO 1 GENERATION_ID 1743652967"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|memory_wrapper:full_memory|RAM:ram_inst1" name="ram_inst1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME RAM HAS_SOPCINFO 1 GENERATION_ID 1743652967"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|memory_wrapper:full_memory|RAM:ram_inst2" name="ram_inst2">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME RAM HAS_SOPCINFO 1 GENERATION_ID 1743652967"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|memory_wrapper:full_memory|RAM:ram_inst3" name="ram_inst3">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME RAM HAS_SOPCINFO 1 GENERATION_ID 1743652967"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|ROM:rom_inst" name="rom_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME ROM HAS_SOPCINFO 1 GENERATION_ID 1745896380"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|VGA:VGA_pll" name="VGA_pll">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME VGA HAS_SOPCINFO 1 GENERATION_ID 1745697761"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|input_audio:input_io|audio_system:u_audio_system" name="u_audio_system">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_system HAS_SOPCINFO 1 GENERATION_ID 1745694735"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|background_data:u_image_data2" name="u_image_data2">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME background_data HAS_SOPCINFO 1 GENERATION_ID 1745800300"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|background_index:u_palette_data2" name="u_palette_data2">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME background_index HAS_SOPCINFO 1 GENERATION_ID 1745800228"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|cheesehat_sprite:cheese_hat" name="cheese_hat">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME cheesehat_sprite HAS_SOPCINFO 1 GENERATION_ID 1745979196"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|data_mem_1:u_image_data" name="u_image_data">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME data_mem_1 HAS_SOPCINFO 1 GENERATION_ID 1745979078"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|data_mem_2:u_palette_data" name="u_palette_data">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME data_mem_2 HAS_SOPCINFO 1 GENERATION_ID 1745979112"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|data_mem_3:u_mask" name="u_mask">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME data_mem_3 HAS_SOPCINFO 1 GENERATION_ID 1745979134"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|memory_wrapper:full_memory|memory:sdram_interface" name="sdram_interface">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME memory HAS_SOPCINFO 1 GENERATION_ID 1744492872"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|obstacle:Obstacle_data" name="Obstacle_data">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME obstacle HAS_SOPCINFO 1 GENERATION_ID 1745804764"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|game_top:game|obstacle_top:obstacle_top_data" name="obstacle_top_data">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME obstacle_top HAS_SOPCINFO 1 GENERATION_ID 1745984007"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="picosoc_min:soc|output_io:out_fifo" name="out_fifo">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME output_io HAS_SOPCINFO 1 GENERATION_ID 1745177072"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:instrumentation_fabric" library="alt_sld_fab" name="instrumentation_fabric">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME alt_sld_fab HAS_SOPCINFO 1"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

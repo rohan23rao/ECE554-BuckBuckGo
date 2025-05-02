@@ -1,0 +1,158 @@
+DEPTH = 256;
+WIDTH = 32;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT BEGIN
+00 : 06400293; -- li t0, 300 // 100
+01 : 12c00313; -- li t1, 100 // 300
+02 : 28000393; -- li t2, 640
+03 : 00000e13; -- li t3, 0
+04 : 00000e93; -- li t4, 0
+05 : 05000f13; -- li t5, 80
+06 : 05000f93; -- li t6, 80
+07 : ff100537; -- lui t0, 0xFF100
+08 : 00052023; -- sw t0, 0(t0)
+09 : 00652223; -- sw t1, 4(t0)
+0A : 00752423; -- sw t2, 8(t0)
+0B : 01c52623; -- sw t3, 12(t0)
+0C : 01d52823; -- sw t4, 16(t0)
+0D : 01e52a23; -- sw t5, 20(t0)
+0E : 01f52c23; -- sw t6, 24(t0)
+0F : 00000293; -- li t0, 0
+
+10 : f00005b7; -- lui t1, 0xF0000
+11 : 0005a783; -- lw a5, 0(t1)
+12 : 01079793; -- slli a5, a5, 16
+13 : 4107d793; -- srai a5, a5, 16
+14 : 0007ca63; -- bltz a5, negate_idle
+15 : 1f400713; -- li a4, 500
+16 : fee7c4e3; -- blt a5, a4, state_idle
+17 : 00000e93; -- li t4, 0
+18 : 00c0006f; -- j state_playing
+
+19 : 40f007b3; -- sub a5, zero, a5
+1A : fedff06f; -- j state_idle
+
+1B : f00005b7; -- lui t1, 0xF0000
+1C : 0005a783; -- lw a5, 0(t1)
+1D : 01079793; -- slli a5, a5, 16
+1E : 4107d793; -- srai a5, a5, 16
+1F : 0c07ce63; -- bltz a5, negate_play
+
+20 : 00001737; -- lui a4, 0x1
+21 : bb87071b; -- addiw a4, a4, -1096
+22 : 00e7ce63; -- blt a5, a4, apply_gravity
+
+23 : 00001637; -- lui t1, 0x1
+24 : bb86061b; -- addiw t1, t1, -1096
+25 : 40c787b3; -- sub a5, a5, t1
+26 : 4087d793; -- srai a5, a5, 8
+27 : 0027d793; -- srli a5, a5, 2
+28 : 40f00eb3; -- sub t4, zero, a5
+
+29 : 00128293; -- addi t0, t0, 1
+2A : 01000613; -- li t5, 16
+2B : 00c2c663; -- blt t0, t5, skip_gravity
+2C : 00000293; -- li t0, 0
+2D : 001e8e93; -- addi t4, t4, 1
+
+2E : 01d30333; -- add t1, t1, t4
+2F : 00000613; -- li t1, 0
+30 : 00c35463; -- bge t1, t5, check_ground
+31 : 00000313; -- li t1, 0
+32 : 19000613; -- li t5, 400
+33 : 0ec35a63; -- bge t1, t5, game_over
+
+34 : ffc38393; -- addi t2, t2, -4
+35 : 00000613; -- li t1, 0
+36 : 04c3dc63; -- bge t2, t1, update_vga
+37 : 28000393; -- li t2, 640
+38 : 001e0e13; -- addi t3, t3, 1
+
+39 : 000e0593; -- mv a1, t3
+3A : 07f5f593; -- andi a1, a1, 127
+3B : 02858593; -- addi a1, a1, 40
+3C : 07800613; -- li t1, 120
+3D : 00c5c463; -- blt a1, t1, skip_obstacle_height
+3E : 07800593; -- li a1, 120
+3F : 00058f13; -- mv t5, a1
+
+40 : ff100537; -- lui t0, 0xFF100
+41 : 01e52a23; -- sw t5, 20(t0)
+
+42 : 000e0593; -- mv a1, t3
+43 : 00359593; -- srai a1, a1, 3
+44 : 07f5f593; -- andi a1, a1, 127
+45 : 02858593; -- addi a1, a1, 40
+46 : 07800613; -- li t1, 120
+47 : 00c5c463; -- blt a1, t1, skip_obstacle_top
+48 : 07800593; -- li a1, 120
+49 : 00058f93; -- mv t6, a1
+
+4A : ff100537; -- lui t0, 0xFF100
+4B : 01f52c23; -- sw t6, 24(t0)
+
+4C : ff100537; -- lui t0, 0xFF100
+4D : 00052023; -- sw t0, 0(t0)
+4E : 00652223; -- sw t1, 4(t0)
+4F : 00752423; -- sw t2, 8(t0)
+50 : 01c52623; -- sw t3, 12(t0)
+
+51 : 0000a637; -- lui t1, 0xA0
+52 : c406061b; -- addiw t1, t1, -960
+53 : fff60613; -- addi t1, t1, -1
+54 : fe061ee3; -- bnez t1, delay_loop
+
+55 : 0340006f; -- j state_playing
+
+56 : 40f007b3; -- sub a5, zero, a5
+57 : 0040006f; -- j state_playing
+
+58 : 00001737; -- lui a4, 0x1
+59 : bb87071b; -- addiw a4, a4, -1096
+5A : f2e7cee3; -- blt a5, a4, wait_restart
+
+5B : 00001637; -- lui t1, 0x1
+5C : bb86061b; -- addiw t1, t1, -1096
+5D : 40c787b3; -- sub a5, a5, t1
+5E : 4087d793; -- srai a5, a5, 8
+5F : 0027d793; -- srli a5, a5, 2
+60 : 40f00eb3; -- sub t4, zero, a5
+61 : f21ff06f; -- j apply_gravity
+
+62 : 00000693; -- li a3, 0
+63 : 03c00713; -- li a4, 60
+64 : 40e387b3; -- sub a5, t1, a4
+65 : 01400813; -- li t0, 20
+66 : 0107c463; -- blt a5, t0, wait_restart
+67 : ed1ff06f; -- j _start
+
+68 : 19000613; -- li t1, 400
+69 : 41e60633; -- sub t1, t1, t4
+6A : fec60613; -- addi t1, t1, -20
+6B : 00c35a63; -- bge t1, t5, wait_restart_neg
+
+6C : 000f8713; -- mv a4, t6
+6D : 01470713; -- addi a4, a4, 20
+6E : 00675463; -- bge a4, t1, wait_restart_neg
+
+6F : eb1ff06f; -- j _start
+
+70 : 00100713; -- li a4, 1
+71 : ff100537; -- lui t0, 0xFF100
+72 : 00e52823; -- sw a4, 16(t0)
+
+73 : f00005b7; -- lui t1, 0xF0000
+74 : 0005a783; -- lw a5, 0(t1)
+75 : 01079793; -- slli a5, a5, 16
+76 : 4107d793; -- srai a5, a5, 16
+77 : 0007c863; -- bltz a5, wait_restart_neg
+78 : 1f400713; -- li a4, 500
+79 : fee7c4e3; -- blt a5, a4, wait_restart
+7A : e19ff06f; -- j _start
+
+7B : 40f007b3; -- sub a5, zero, a5
+7C : ff1ff06f; -- j wait_restart
+
+[7D..FF] : 00000000;
+END;

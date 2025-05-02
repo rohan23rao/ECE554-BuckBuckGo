@@ -1,0 +1,35 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\rohan\development\capstone\ECE554CPU_WORKING\data_mem_1.qsys --block-symbol-file --output-directory=C:\Users\rohan\development\capstone\ECE554CPU_WORKING\data_mem_1 --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU_WORKING/data_mem_1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding image [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module image
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\rohan\development\capstone\ECE554CPU_WORKING\data_mem_1.qsys --synthesis=VERILOG --output-directory=C:\Users\rohan\development\capstone\ECE554CPU_WORKING\data_mem_1\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU_WORKING/data_mem_1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding image [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module image
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: data_mem_1: Generating "data_mem_1" for QUARTUS_SYNTH
+Info: image: Starting RTL generation for module 'data_mem_1_image'
+Info: image:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/24.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/24.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/24.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/24.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=data_mem_1_image --dir=C:/Users/rohan/AppData/Local/Temp/alt0208_3716998622142341097.dir/0002_image_gen/ --quartus_dir=C:/intelfpga_lite/24.1std/quartus --verilog --config=C:/Users/rohan/AppData/Local/Temp/alt0208_3716998622142341097.dir/0002_image_gen//data_mem_1_image_component_configuration.pl --do_build_sim=0}]
+Info: image: Done RTL generation for module 'data_mem_1_image'
+Info: image: "data_mem_1" instantiated altera_avalon_onchip_memory2 "image"
+Info: data_mem_1: Done "data_mem_1" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

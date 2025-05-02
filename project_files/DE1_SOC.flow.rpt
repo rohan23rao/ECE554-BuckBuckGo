@@ -1,0 +1,214 @@
+Flow report for DE1_SOC
+Wed Apr 30 00:48:36 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Apr 30 00:48:14 2025           ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                   ; DE1_SOC                                         ;
+; Top-level Entity Name           ; DE1_SOC                                         ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 8,314 / 32,070 ( 26 % )                         ;
+; Total registers                 ; 8126                                            ;
+; Total pins                      ; 162 / 457 ( 35 % )                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 3,157,760 / 4,065,280 ( 78 % )                  ;
+; Total DSP Blocks                ; 10 / 87 ( 11 % )                                ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 3 / 6 ( 50 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/30/2025 00:43:25 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE1_SOC             ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                         ;
++-------------------------------------+--------------------------------------------------------------------+---------------+------------------+------------+
+; Assignment Name                     ; Value                                                              ; Default Value ; Entity Name      ; Section Id ;
++-------------------------------------+--------------------------------------------------------------------+---------------+------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 261883899345343.174599180428480                                    ; --            ; --               ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                 ; --            ; --               ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                  ; --            ; --               ; --         ;
+; MISC_FILE                           ; cheesehat_sprite/synthesis/../cheesehat_sprite.cmp                 ; --            ; --               ; --         ;
+; MISC_FILE                           ; cheesehat_sprite/synthesis/../../cheesehat_sprite.qsys             ; --            ; --               ; --         ;
+; MISC_FILE                           ; data_mem_3/synthesis/../data_mem_3.cmp                             ; --            ; --               ; --         ;
+; MISC_FILE                           ; data_mem_3/synthesis/../../data_mem_3.qsys                         ; --            ; --               ; --         ;
+; MISC_FILE                           ; data_mem_2/synthesis/../data_mem_2.cmp                             ; --            ; --               ; --         ;
+; MISC_FILE                           ; data_mem_2/synthesis/../../data_mem_2.qsys                         ; --            ; --               ; --         ;
+; MISC_FILE                           ; data_mem_1/synthesis/../data_mem_1.cmp                             ; --            ; --               ; --         ;
+; MISC_FILE                           ; data_mem_1/synthesis/../../data_mem_1.qsys                         ; --            ; --               ; --         ;
+; MISC_FILE                           ; Audio_ips/synthesis/../audio_system.cmp                            ; --            ; --               ; --         ;
+; MISC_FILE                           ; Audio_ips/synthesis/../../audio_system.qsys                        ; --            ; --               ; --         ;
+; MISC_FILE                           ; obstacle/synthesis/../obstacle_top.cmp                             ; --            ; --               ; --         ;
+; MISC_FILE                           ; obstacle/synthesis/../../obstacle_top.qsys                         ; --            ; --               ; --         ;
+; MISC_FILE                           ; VGA/synthesis/../VGA.cmp                                           ; --            ; --               ; --         ;
+; MISC_FILE                           ; VGA/synthesis/../../VGA.qsys                                       ; --            ; --               ; --         ;
+; MISC_FILE                           ; output_io/synthesis/../output_io.cmp                               ; --            ; --               ; --         ;
+; MISC_FILE                           ; output_io/synthesis/../../output_io.qsys                           ; --            ; --               ; --         ;
+; MISC_FILE                           ; sdram Jtag test/sdram/synthesis/../memory.cmp                      ; --            ; --               ; --         ;
+; MISC_FILE                           ; sdram Jtag test/sdram/synthesis/../../memory.qsys                  ; --            ; --               ; --         ;
+; MISC_FILE                           ; ROM/synthesis/../ROM.cmp                                           ; --            ; --               ; --         ;
+; MISC_FILE                           ; ROM/synthesis/../../ROM.qsys                                       ; --            ; --               ; --         ;
+; MISC_FILE                           ; RAM/synthesis/../RAM.cmp                                           ; --            ; --               ; --         ;
+; MISC_FILE                           ; RAM/synthesis/../../RAM.qsys                                       ; --            ; --               ; --         ;
+; MISC_FILE                           ; background_index/synthesis/../background_index.cmp                 ; --            ; --               ; --         ;
+; MISC_FILE                           ; background_index/synthesis/../../background_index.qsys             ; --            ; --               ; --         ;
+; MISC_FILE                           ; background_data/synthesis/../background_data.cmp                   ; --            ; --               ; --         ;
+; MISC_FILE                           ; background_data/synthesis/../../background_data.qsys               ; --            ; --               ; --         ;
+; MISC_FILE                           ; obstacle/synthesis/../obstacle.cmp                                 ; --            ; --               ; --         ;
+; MISC_FILE                           ; obstacle/synthesis/../../obstacle.qsys                             ; --            ; --               ; --         ;
+; NUM_PARALLEL_PROCESSORS             ; 13                                                                 ; --            ; --               ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                             ; --            ; --               ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                             ; --            ; --               ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                             ; --            ; --               ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                ; --            ; --               ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                              ; --            ; --               ; --         ;
+; SLD_FILE                            ; cheesehat_sprite/synthesis/cheesehat_sprite.debuginfo              ; --            ; --               ; --         ;
+; SLD_FILE                            ; data_mem_3/synthesis/data_mem_3.debuginfo                          ; --            ; --               ; --         ;
+; SLD_FILE                            ; data_mem_2/synthesis/data_mem_2.debuginfo                          ; --            ; --               ; --         ;
+; SLD_FILE                            ; data_mem_1/synthesis/data_mem_1.debuginfo                          ; --            ; --               ; --         ;
+; SLD_FILE                            ; Audio_ips/synthesis/audio_system.debuginfo                         ; --            ; --               ; --         ;
+; SLD_FILE                            ; obstacle/synthesis/obstacle_top.debuginfo                          ; --            ; --               ; --         ;
+; SLD_FILE                            ; VGA/synthesis/VGA.debuginfo                                        ; --            ; --               ; --         ;
+; SLD_FILE                            ; output_io/synthesis/output_io.debuginfo                            ; --            ; --               ; --         ;
+; SLD_FILE                            ; sdram Jtag test/sdram/synthesis/memory.debuginfo                   ; --            ; --               ; --         ;
+; SLD_FILE                            ; ROM/synthesis/ROM.debuginfo                                        ; --            ; --               ; --         ;
+; SLD_FILE                            ; RAM/synthesis/RAM.debuginfo                                        ; --            ; --               ; --         ;
+; SLD_FILE                            ; background_index/synthesis/background_index.debuginfo              ; --            ; --               ; --         ;
+; SLD_FILE                            ; background_data/synthesis/background_data.debuginfo                ; --            ; --               ; --         ;
+; SLD_FILE                            ; obstacle/synthesis/obstacle.debuginfo                              ; --            ; --               ; --         ;
+; SLD_INFO                            ; QSYS_NAME RAM HAS_SOPCINFO 1 GENERATION_ID 1743652967              ; --            ; RAM              ; --         ;
+; SLD_INFO                            ; QSYS_NAME ROM HAS_SOPCINFO 1 GENERATION_ID 1745896380              ; --            ; ROM              ; --         ;
+; SLD_INFO                            ; QSYS_NAME VGA HAS_SOPCINFO 1 GENERATION_ID 1745697761              ; --            ; VGA              ; --         ;
+; SLD_INFO                            ; QSYS_NAME audio_system HAS_SOPCINFO 1 GENERATION_ID 1745694735     ; --            ; audio_system     ; --         ;
+; SLD_INFO                            ; QSYS_NAME background_data HAS_SOPCINFO 1 GENERATION_ID 1745800300  ; --            ; background_data  ; --         ;
+; SLD_INFO                            ; QSYS_NAME background_index HAS_SOPCINFO 1 GENERATION_ID 1745800228 ; --            ; background_index ; --         ;
+; SLD_INFO                            ; QSYS_NAME cheesehat_sprite HAS_SOPCINFO 1 GENERATION_ID 1745979196 ; --            ; cheesehat_sprite ; --         ;
+; SLD_INFO                            ; QSYS_NAME data_mem_1 HAS_SOPCINFO 1 GENERATION_ID 1745979078       ; --            ; data_mem_1       ; --         ;
+; SLD_INFO                            ; QSYS_NAME data_mem_2 HAS_SOPCINFO 1 GENERATION_ID 1745979112       ; --            ; data_mem_2       ; --         ;
+; SLD_INFO                            ; QSYS_NAME data_mem_3 HAS_SOPCINFO 1 GENERATION_ID 1745979134       ; --            ; data_mem_3       ; --         ;
+; SLD_INFO                            ; QSYS_NAME memory HAS_SOPCINFO 1 GENERATION_ID 1744492872           ; --            ; memory           ; --         ;
+; SLD_INFO                            ; QSYS_NAME obstacle HAS_SOPCINFO 1 GENERATION_ID 1745804764         ; --            ; obstacle         ; --         ;
+; SLD_INFO                            ; QSYS_NAME obstacle_top HAS_SOPCINFO 1 GENERATION_ID 1745984007     ; --            ; obstacle_top     ; --         ;
+; SLD_INFO                            ; QSYS_NAME output_io HAS_SOPCINFO 1 GENERATION_ID 1745177072        ; --            ; output_io        ; --         ;
+; SOPCINFO_FILE                       ; cheesehat_sprite/synthesis/../../cheesehat_sprite.sopcinfo         ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; data_mem_3/synthesis/../../data_mem_3.sopcinfo                     ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; data_mem_2/synthesis/../../data_mem_2.sopcinfo                     ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; data_mem_1/synthesis/../../data_mem_1.sopcinfo                     ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; Audio_ips/synthesis/../../audio_system.sopcinfo                    ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; obstacle/synthesis/../../obstacle_top.sopcinfo                     ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; VGA/synthesis/../../VGA.sopcinfo                                   ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; output_io/synthesis/../../output_io.sopcinfo                       ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; sdram Jtag test/sdram/synthesis/../../memory.sopcinfo              ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; ROM/synthesis/../../ROM.sopcinfo                                   ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; RAM/synthesis/../../RAM.sopcinfo                                   ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; background_index/synthesis/../../background_index.sopcinfo         ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; background_data/synthesis/../../background_data.sopcinfo           ; --            ; --               ; --         ;
+; SOPCINFO_FILE                       ; obstacle/synthesis/../../obstacle.sopcinfo                         ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --               ; --         ;
+; VERILOG_MACRO                       ; MYMACRO=1                                                          ; --            ; --               ; --         ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                                                ; --            ; --               ; --         ;
++-------------------------------------+--------------------------------------------------------------------+---------------+------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:01:03     ; 3.5                     ; 5360 MB             ; 00:02:24                           ;
+; Fitter               ; 00:03:20     ; 1.7                     ; 8224 MB             ; 00:16:47                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 5401 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:21     ; 4.4                     ; 5838 MB             ; 00:01:17                           ;
+; Total                ; 00:04:57     ; --                      ; --                  ; 00:20:41                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; LAPTOP-R8L1JBOF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-R8L1JBOF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-R8L1JBOF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-R8L1JBOF  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SOC -c DE1_SOC
+quartus_fit --read_settings_files=off --write_settings_files=off DE1_SOC -c DE1_SOC
+quartus_asm --read_settings_files=off --write_settings_files=off DE1_SOC -c DE1_SOC
+quartus_sta DE1_SOC -c DE1_SOC
+
+
+

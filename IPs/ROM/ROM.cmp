@@ -1,0 +1,15 @@
+	component ROM is
+		port (
+			clk_rom_clk           : in  std_logic                     := 'X';             -- clk
+			rom_slave_address     : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- address
+			rom_slave_debugaccess : in  std_logic                     := 'X';             -- debugaccess
+			rom_slave_clken       : in  std_logic                     := 'X';             -- clken
+			rom_slave_chipselect  : in  std_logic                     := 'X';             -- chipselect
+			rom_slave_write       : in  std_logic                     := 'X';             -- write
+			rom_slave_readdata    : out std_logic_vector(31 downto 0);                    -- readdata
+			rom_slave_writedata   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			rom_slave_byteenable  : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			rst_rom_reset         : in  std_logic                     := 'X'              -- reset
+		);
+	end component ROM;
+

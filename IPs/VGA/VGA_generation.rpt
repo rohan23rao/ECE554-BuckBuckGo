@@ -1,0 +1,34 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\DRIVE D\ECE554\ECE554CPU-main\VGA.qsys" --block-symbol-file --output-directory="C:\DRIVE D\ECE554\ECE554CPU-main\VGA" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/VGA.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding video_pll_0 [altera_up_avalon_video_pll 18.0]
+Progress: Parameterizing module video_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\DRIVE D\ECE554\ECE554CPU-main\VGA.qsys" --synthesis=VERILOG --output-directory="C:\DRIVE D\ECE554\ECE554CPU-main\VGA\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ECE554CPU-main/VGA.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding video_pll_0 [altera_up_avalon_video_pll 18.0]
+Progress: Parameterizing module video_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: VGA: Generating VGA "VGA" for QUARTUS_SYNTH
+Info: video_pll_0: "VGA" instantiated altera_up_avalon_video_pll "video_pll_0"
+Info: video_pll: "video_pll_0" instantiated altera_pll "video_pll"
+Info: reset_from_locked: "video_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: VGA: Done "VGA" with 4 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
