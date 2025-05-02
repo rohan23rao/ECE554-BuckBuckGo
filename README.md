@@ -35,7 +35,7 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 > **System Block Diagram**
 [comment]: ![Block Diagram](docs/block_diagram.png)
 <p align="center">
-  <img src="doc/block_diagram.png" alt="Block diagram" width="350"/>
+  <img src="docs/block_diagram.png" alt="Block diagram" width="350"/>
 </p>
 
 >  **Microarchitecture Diagram**
