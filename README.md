@@ -21,7 +21,7 @@
 
 ## Project Overview
 
-* **Soft‑core CPU:** [PicoRV32](https://github.com/YosysHQ/picorv32) configured as RV32IMC, clocked at 50 MHz.
+* **Soft‑core CPU:** [PicoRV32](https://github.com/YosysHQ/picorv32) configured as RV32IMC
 * **VPU:** Custom 4‑lane, 32‑bit Vector Processing Unit implementing a subset of the RISC‑V Vector Extension (RVV **Zve32x**).
 * **Real‑time audio:** WM8731 codec over I²S → FIFO → CPU/VPU for gameplay control.
 * **Graphics pipeline:** 640 × 480 @ 60 Hz VGA output, sprite ROMs stored in MIF/HEX, rendered entirely on‑chip.
@@ -39,7 +39,7 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 ![Microarchitecture](docs/microarchitecture_diagram.png)
 
 
-* **CPU ↔ VPU:** PCPI coprocessor interface with ready/valid handshake and bundled‑instruction optimisation (up to 4 consecutive vector ops).
+* **CPU ↔ VPU:** PCPI coprocessor interface with ready/valid handshake.
 * **Memory map:** BRAM for code/data, SDRAM for large sprite frames and audio buffers.
 * **Toolchain:** Quartus Prime 22.1 Std, ModelSim, RISC‑V GCC 13.
 
@@ -50,7 +50,6 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 | Logic Elements | \~48 k / 85 k             |
 | BRAM           | 79%                       |
 | On‑chip DSP    | 10 / 87                   |
-| F‑max          | 105 MHz (timed at 50 MHz) |
 
 
 ## Repository Layout
@@ -73,8 +72,8 @@ Watch a short hardware walk‑through and gameplay clip [here](https://msadmansa
 
 ## Contributors
 
-* **Rohan Rao** – VPU design, code integration, graphics
 * **M. Sadman Sakib** – Memory controller, VPU, system integration
+* **Rohan Rao** – VPU design, code integration, graphics
 * **Aditi Shah** – CPU bring‑up, audio subsystem
 * **Asish Das** – Software tooling, speech‑to‑text exploration
 
@@ -85,7 +84,7 @@ See the [team page](https://msadmansakib.github.io/ECE554-Team3-SpeakEasy/doc/te
 * Quantise & offload an on‑device **speech‑to‑text** model (Tiny‑TFLite) onto the VPU.
 * Increase VPU width to **8 lanes** and add strided memory operations.
 * DMA‑based streaming from SDRAM to reduce BRAM footprint.
-* Port the design to a standalone **Max 10** or **Artix‑7** board.
+* Port the design to a popular standalone **Max 10** or **Artix‑7** boards.
 
 ## License
 
