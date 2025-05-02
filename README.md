@@ -32,8 +32,11 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 
 ## System Architecture
 
-![Block Diagram](docs/block_diagram.png)
+![Block Diagram](docs/bock_diagram.png)
+> **System Block Diagram**
 ![Microarchitecture](docs/microarchitecture_diagram.png)
+> > **Microarchitecture Diagram**
+
 
 * **CPU ↔ VPU:** PCPI coprocessor interface with ready/valid handshake and bundled‑instruction optimisation (up to 4 consecutive vector ops).
 * **Memory map:** BRAM for code/data, SDRAM for large sprite frames and audio buffers.
