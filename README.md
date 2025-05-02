@@ -32,7 +32,7 @@ The result is a self‑contained arcade game—complete with scrolling backgroun
 
 ## System Architecture
 
-![Block Diagram](docs/bock_diagram.png)
+![Block Diagram](docs/block_diagram.png)
 > **System Block Diagram**
 ![Microarchitecture](docs/microarchitecture_diagram.png)
 > > **Microarchitecture Diagram**
